@@ -55,3 +55,19 @@ But **PLEASE** read the [Contributions Guidelines](CONTRIBUTING.md) carefully be
 The materials herein are all (c) 2013-2017 Kyle Simpson.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.
+
+## Pandoc
+
+```bash
+pandoc -s ch1.md ch2.md ch3.md -o UpAndGoing.pdf
+
+pandoc -s ch1.md ch2.md ch3.md ch4.md ch5.md -o ScopeAndClosures.pdf
+
+pandoc -s ch1.md ch2.md ch3.md ch4.md ch5.md ch6.md -o ThisAndObjectPrototypes.pdf
+
+pandoc -s ch1.md ch2.md ch3.md ch4.md ch5.md -o TypesAndGrammar.pdf --pdf-engine=xelatex
+
+pandoc -s ch1.md ch2.md ch3.md ch4.md ch5.md ch6.md -o AsyncAndPerformance.pdf
+
+pandoc -s ch1.md ch2.md ch3.md ch4.md ch5.md ch6.md ch7.md ch8.md -o Es6AndBeyond.pdf --pdf-engine=xelatex
+```
